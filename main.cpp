@@ -54,11 +54,15 @@ int main() {
                     case 10: ch1 = 'V', ch2 = 'E', ch3 = 'N', ch4 = 'C', ch5 = 'E', ch6 = 'R';
                         break;
                 }
+                //WHILE PARA CONTINUAR JOGANDO CASO NAO TENHA ACABADO O JOGO
+                subch1 = '_'; subch2 = '_'; subch3 = '_'; subch4 = '_'; subch5 = '_'; subch6 = '_';
+                cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " << subch6 << endl;
                 while (vidas > 0 && (subch1 != ch1 || subch2 != ch2 || subch3 != ch3 || subch4 != ch4 || subch5 != ch5
                                      || subch6 != ch6)) {
-                    //WHILE PARA CONTINUAR JOGANDO CASO NAO TENHA ACABADO O JOGO
                     cout << "Insira uma letra:" << endl;
                     cin >> letra;
+
+
                     if (letra == ch1 || letra == ch2 || letra == ch3 || letra == ch4 || letra == ch5 || letra == ch6) {
                         // IF PARA EXIBIR AS LETRAS DE ACORDO COM A POSIÇÃO NA PALAVRA
                         if (letra == ch1) subch1 = ch1;
@@ -67,7 +71,7 @@ int main() {
                         if (letra == ch4) subch4 = ch4;
                         if (letra == ch5) subch5 = ch5;
                         if (letra == ch6) subch6 = ch6;
-                        cout << subch1 << subch2 << subch3 << subch4 << subch5 << subch6 << endl;
+                        cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " << subch6 << " " << endl;
                     } else {
                         // ELSE PARA TRATAR O ERRO
                         vidas--;
@@ -178,15 +182,6 @@ int main() {
                                 cout << "_|___\n";
                                 cout << "Última chance! Apenas 1 tentativa restante!\n";
                                 break;
-                            case 0:
-                                cout << "  _______\n";
-                                cout << " |       |\n";
-                                cout << " |       O\n";
-                                cout << " |      /|\\\n";
-                                cout << " |       |\n";
-                                cout << " |      / \\\n";
-                                cout << "_|___\n";
-                                break;
                             default:
                                 cout << "  _______\n";
                                 cout << " |       |\n";
@@ -197,6 +192,7 @@ int main() {
                                 cout << "_|___\n";
                                 break;
                         }
+                        cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " << subch6 << " " << endl;
                     }
                 }
                 system("cls");
