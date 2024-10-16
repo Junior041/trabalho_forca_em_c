@@ -54,9 +54,9 @@ int main() {
                     case 10: ch1 = 'V', ch2 = 'E', ch3 = 'N', ch4 = 'C', ch5 = 'E', ch6 = 'R';
                         break;
                 }
-                //WHILE PARA CONTINUAR JOGANDO CASO NAO TENHA ACABADO O JOGO
-                subch1 = '_'; subch2 = '_'; subch3 = '_'; subch4 = '_'; subch5 = '_'; subch6 = '_';
-                cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " << subch6 << endl;
+                cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " << subch6 <<
+                        endl;
+            //WHILE PARA CONTINUAR JOGANDO CASO NAO TENHA ACABADO O JOGO
                 while (vidas > 0 && (subch1 != ch1 || subch2 != ch2 || subch3 != ch3 || subch4 != ch4 || subch5 != ch5
                                      || subch6 != ch6)) {
                     cout << "Insira uma letra:" << endl;
@@ -71,7 +71,8 @@ int main() {
                         if (letra == ch4) subch4 = ch4;
                         if (letra == ch5) subch5 = ch5;
                         if (letra == ch6) subch6 = ch6;
-                        cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " << subch6 << " " << endl;
+                        cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " <<
+                                subch6 << " " << endl;
                     } else {
                         // ELSE PARA TRATAR O ERRO
                         vidas--;
@@ -192,7 +193,8 @@ int main() {
                                 cout << "_|___\n";
                                 break;
                         }
-                        cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " << subch6 << " " << endl;
+                        cout << subch1 << " " << subch2 << " " << subch3 << " " << subch4 << " " << subch5 << " " <<
+                                subch6 << " " << endl;
                     }
                 }
                 system("cls");
@@ -215,9 +217,9 @@ int main() {
                 cout << "- Gabriel Rodrigues Leite" << endl;
                 cout << "- Ismael Antonio da Silva Junior" << endl;
                 cout << "- João Vitor Silveira Freitas" << endl << endl;
-                cout << "Outubro/2024" << endl << endl;
                 cout << "Professor/Disciplina:" << endl;
                 cout << "- Rafael Ballottin Martins/Algoritmos e Programação" << endl;
+                cout << "Outubro/2024" << endl << endl;
                 system("pause");
                 system("cls");
                 break;
